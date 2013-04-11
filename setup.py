@@ -9,12 +9,7 @@ setup(
     install_requires = ['lxml','requests','wsgiref', 'prettytable'],
     packages = find_packages(),
     version = '0.6',
-    scripts = [],
+    scripts = ['bin/hscontrol.py'],
     zip_safe = False,
     name = 'HomeseerPy',
-    entry_points = {
-        'console_scripts':[
-            'hscontrol = homeseerpy.hscontrol:main',
-            ]
-    }
 )
