@@ -1,17 +1,15 @@
-A basic Homeseer control base class.
+#A basic Homeseer control base class.
 
-INSTALLATION : install 'python setup.py install'
+###INSTALLATION : `install 'python setup.py install'`
 
-Usage:
- from homeseerpy import HomeseerPy
- hs = HomeseerPy("IPADDRESS"[, username="username", password"pass"])
+####Usage:
+ `from homeseerpy import HomeseerPy`
+ `hs = HomeseerPy("IPADDRESS"[, username="username", password"pass"])`
 
 
-Implemented functions
- - control:
-        to control Homeseer interfaces
- - status:
-        to display the current status interfaces
+####Implemented functions:
+___control___: to control Homeseer interfaces
+___status___: to display the current status interfaces
 
 To control an HS device supporting on/off/dim then enter the following:
 
