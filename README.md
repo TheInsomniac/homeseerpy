@@ -8,7 +8,7 @@
 
 
 ####Implemented functions:
-___control___: to control Homeseer interfaces
+___control___: to control Homeseer interfaces  
 ___status___: to display the current status interfaces
 
 To control an HS device supporting on/off/dim then enter the following:
