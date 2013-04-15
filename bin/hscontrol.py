@@ -5,12 +5,11 @@ from prettytable import PrettyTable
 
 def main():
 
-    #**** CHANGE THIS TO YOUR HOMESEER SERVER IP ADDRESS ****
+    with open(os.getenv('HOME') + '/.hscontrol.cfg') as fd:
+        config = dict(line.strip().split(None, 1) for line in fd)
 
-    #hs = HomeseerPy("http://192.168.10.102","USERNAME","PASSWORD")
-    hs = HomeseerPy("http://192.168.10.102")
-
-    #**** CHANGE THIS TO YOUR HOMESEER SERVER IP ADDRESS ****
+    hs = HomeseerPy('http://' + config['hostname'],config['username'],
+                    config['password'])
 
     if len(sys.argv) == 1:
         #clear screen first
@@ -63,6 +62,11 @@ def main():
 
     def run_status(command):
         results = hs.status(command)
+
+        # Enable IPython debug to shell
+        #from IPython import embed
+        #embed()
+
         #clear screen first
         os.system('cls' if os.name == 'nt' else 'clear')
 
