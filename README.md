@@ -10,7 +10,7 @@ If running the hscontrol.py command line script then a configuration file
 must be created in the user's home directory. The file should be named  
 '.hscontrol.cfg' and contain the following:  
 
-hostname your_hs_ip_or hostname (without trailing http://)  
+hostname your_hs_ip_or hostname (without preceding http://)  
 username your_hs_username  
 password your_hs_password  
 
